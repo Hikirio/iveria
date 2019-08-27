@@ -28,9 +28,8 @@ Route::get('/contact', function () {
 });
 
 //==========Админка================
-Route::get('/admin', function () {
-    return view('admin.dashboard');
-});
+Route::get('/admin', 'ProductionController@index');
+Route::get('/admin/tables','UserController@index');
 
 Auth::routes();
 

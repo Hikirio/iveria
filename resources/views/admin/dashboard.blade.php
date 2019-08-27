@@ -34,20 +34,7 @@
 </head>
 
 <body class="grey lighten-3">
-{{--<header>--}}
-{{--    <nav class="navbar-fixed-top navbar-expand-lg navbar-light white scrolling-navbar">--}}
-{{--        <div class="container-fluid">--}}
-{{--            <a href="#" class="navbar-brand waves-effect">--}}
-{{--                <strong class="blue-text">Logo</strong>--}}
-{{--                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent"--}}
-{{--                        aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle Navigation"><span--}}
-{{--                            class="navbar-toggler-icon"></span></button>--}}
-{{--            </a>--}}
-{{--        </div>--}}
 
-{{--    </nav>--}}
-
-{{--</header>--}}
 
 <div id="wrapper">
 
@@ -60,204 +47,19 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="index.html">SB Admin v2.0</a>
+            <a class="navbar-brand" href="#">Iveria-Aqua</a>
         </div>
         <!-- /.navbar-header -->
 
+
+        {{--        Шапка       --}}
+
         <ul class="nav navbar-top-links navbar-right">
-            <li class="dropdown">
-                <a class="dropdown-toggle" data-toggle="dropdown" href="#">
-                    <i class="fa fa-envelope fa-fw"></i>  <i class="fa fa-caret-down"></i>
-                </a>
-                <ul class="dropdown-menu dropdown-messages">
-                    <li>
-                        <a href="#">
-                            <div>
-                                <strong>John Smith</strong>
-                                <span class="pull-right text-muted">
-                                        <em>Yesterday</em>
-                                    </span>
-                            </div>
-                            <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eleifend...</div>
-                        </a>
-                    </li>
-                    <li class="divider"></li>
-                    <li>
-                        <a href="#">
-                            <div>
-                                <strong>John Smith</strong>
-                                <span class="pull-right text-muted">
-                                        <em>Yesterday</em>
-                                    </span>
-                            </div>
-                            <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eleifend...</div>
-                        </a>
-                    </li>
-                    <li class="divider"></li>
-                    <li>
-                        <a href="#">
-                            <div>
-                                <strong>John Smith</strong>
-                                <span class="pull-right text-muted">
-                                        <em>Yesterday</em>
-                                    </span>
-                            </div>
-                            <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eleifend...</div>
-                        </a>
-                    </li>
-                    <li class="divider"></li>
-                    <li>
-                        <a class="text-center" href="#">
-                            <strong>Read All Messages</strong>
-                            <i class="fa fa-angle-right"></i>
-                        </a>
-                    </li>
-                </ul>
-                <!-- /.dropdown-messages -->
-            </li>
+
             <!-- /.dropdown -->
             <li class="dropdown">
                 <a class="dropdown-toggle" data-toggle="dropdown" href="#">
-                    <i class="fa fa-tasks fa-fw"></i>  <i class="fa fa-caret-down"></i>
-                </a>
-                <ul class="dropdown-menu dropdown-tasks">
-                    <li>
-                        <a href="#">
-                            <div>
-                                <p>
-                                    <strong>Task 1</strong>
-                                    <span class="pull-right text-muted">40% Complete</span>
-                                </p>
-                                <div class="progress progress-striped active">
-                                    <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
-                                        <span class="sr-only">40% Complete (success)</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                    </li>
-                    <li class="divider"></li>
-                    <li>
-                        <a href="#">
-                            <div>
-                                <p>
-                                    <strong>Task 2</strong>
-                                    <span class="pull-right text-muted">20% Complete</span>
-                                </p>
-                                <div class="progress progress-striped active">
-                                    <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%">
-                                        <span class="sr-only">20% Complete</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                    </li>
-                    <li class="divider"></li>
-                    <li>
-                        <a href="#">
-                            <div>
-                                <p>
-                                    <strong>Task 3</strong>
-                                    <span class="pull-right text-muted">60% Complete</span>
-                                </p>
-                                <div class="progress progress-striped active">
-                                    <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
-                                        <span class="sr-only">60% Complete (warning)</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                    </li>
-                    <li class="divider"></li>
-                    <li>
-                        <a href="#">
-                            <div>
-                                <p>
-                                    <strong>Task 4</strong>
-                                    <span class="pull-right text-muted">80% Complete</span>
-                                </p>
-                                <div class="progress progress-striped active">
-                                    <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
-                                        <span class="sr-only">80% Complete (danger)</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                    </li>
-                    <li class="divider"></li>
-                    <li>
-                        <a class="text-center" href="#">
-                            <strong>See All Tasks</strong>
-                            <i class="fa fa-angle-right"></i>
-                        </a>
-                    </li>
-                </ul>
-                <!-- /.dropdown-tasks -->
-            </li>
-            <!-- /.dropdown -->
-            <li class="dropdown">
-                <a class="dropdown-toggle" data-toggle="dropdown" href="#">
-                    <i class="fa fa-bell fa-fw"></i>  <i class="fa fa-caret-down"></i>
-                </a>
-                <ul class="dropdown-menu dropdown-alerts">
-                    <li>
-                        <a href="#">
-                            <div>
-                                <i class="fa fa-comment fa-fw"></i> New Comment
-                                <span class="pull-right text-muted small">4 minutes ago</span>
-                            </div>
-                        </a>
-                    </li>
-                    <li class="divider"></li>
-                    <li>
-                        <a href="#">
-                            <div>
-                                <i class="fa fa-twitter fa-fw"></i> 3 New Followers
-                                <span class="pull-right text-muted small">12 minutes ago</span>
-                            </div>
-                        </a>
-                    </li>
-                    <li class="divider"></li>
-                    <li>
-                        <a href="#">
-                            <div>
-                                <i class="fa fa-envelope fa-fw"></i> Message Sent
-                                <span class="pull-right text-muted small">4 minutes ago</span>
-                            </div>
-                        </a>
-                    </li>
-                    <li class="divider"></li>
-                    <li>
-                        <a href="#">
-                            <div>
-                                <i class="fa fa-tasks fa-fw"></i> New Task
-                                <span class="pull-right text-muted small">4 minutes ago</span>
-                            </div>
-                        </a>
-                    </li>
-                    <li class="divider"></li>
-                    <li>
-                        <a href="#">
-                            <div>
-                                <i class="fa fa-upload fa-fw"></i> Server Rebooted
-                                <span class="pull-right text-muted small">4 minutes ago</span>
-                            </div>
-                        </a>
-                    </li>
-                    <li class="divider"></li>
-                    <li>
-                        <a class="text-center" href="#">
-                            <strong>See All Alerts</strong>
-                            <i class="fa fa-angle-right"></i>
-                        </a>
-                    </li>
-                </ul>
-                <!-- /.dropdown-alerts -->
-            </li>
-            <!-- /.dropdown -->
-            <li class="dropdown">
-                <a class="dropdown-toggle" data-toggle="dropdown" href="#">
-                    <i class="fa fa-user fa-fw"></i>  <i class="fa fa-caret-down"></i>
+                    <i class="fa fa-user fa-fw"></i> <i class="fa fa-caret-down"></i>
                 </a>
                 <ul class="dropdown-menu dropdown-user">
                     <li><a href="#"><i class="fa fa-user fa-fw"></i> User Profile</a>
@@ -270,26 +72,17 @@
                 </ul>
                 <!-- /.dropdown-user -->
             </li>
-            <!-- /.dropdown -->
         </ul>
         <!-- /.navbar-top-links -->
+
+
+        {{--        Левая боковая панель--}}
 
         <div class="navbar-default sidebar" role="navigation">
             <div class="sidebar-nav navbar-collapse">
                 <ul class="nav" id="side-menu">
-{{--                    <li class="sidebar-search">--}}
-{{--                        <div class="input-group custom-search-form">--}}
-{{--                            <input type="text" class="form-control" placeholder="Search...">--}}
-{{--                            <span class="input-group-btn">--}}
-{{--                                <button class="btn btn-default" type="button">--}}
-{{--                                    <i class="fa fa-search"></i>--}}
-{{--                                </button>--}}
-{{--                            </span>--}}
-{{--                        </div>--}}
-{{--                        <!-- /input-group -->--}}
-{{--                    </li>--}}
                     <li>
-                        <a class="active" href="{{url('/admin')}}"><i class="fa fa-dashboard fa-fw"></i> Dashboard</a>
+                        <a class="active" href="{{url('/admin')}}"><i class="fa fa-dashboard fa-fw"></i> Главная страница админ панели</a>
                     </li>
                     <li>
                         <a href="#"><i class="fa fa-bar-chart-o fa-fw"></i> Charts<span class="fa arrow"></span></a>
@@ -304,7 +97,7 @@
                         <!-- /.nav-second-level -->
                     </li>
                     <li>
-                        <a href="tables.html"><i class="fa fa-table fa-fw"></i> Tables</a>
+                        <a href="{{url('admin/tables')}}"><i class="fa fa-table fa-fw"></i> Tables</a>
                     </li>
                     <li>
                         <a href="forms.html"><i class="fa fa-edit fa-fw"></i> Forms</a>
@@ -331,7 +124,8 @@
                         <!-- /.nav-second-level -->
                     </li>
                     <li>
-                        <a href="#"><i class="fa fa-sitemap fa-fw"></i> Multi-Level Dropdown<span class="fa arrow"></span></a>
+                        <a href="#"><i class="fa fa-sitemap fa-fw"></i> Multi-Level Dropdown<span
+                                    class="fa arrow"></span></a>
                         <ul class="nav nav-second-level">
                             <li>
                                 <a href="#">Second Level Item</a>
@@ -387,6 +181,11 @@
             <!-- /.col-lg-12 -->
         </div>
         <!-- /.row -->
+
+
+        {{--        Тикеты              --}}
+
+
         <div class="row">
             <div class="col-lg-3 col-md-6">
                 <div class="panel panel-primary">
@@ -415,11 +214,11 @@
                     <div class="panel-heading">
                         <div class="row">
                             <div class="col-xs-3">
-                                <i class="fa fa-tasks fa-5x"></i>
+                                <i class="fa fa-user fa-5x"></i>
                             </div>
                             <div class="col-xs-9 text-right">
-                                <div class="huge">12</div>
-                                <div>New Tasks!</div>
+                                <div class="huge">{{$users}}</div>
+                                <div>Количество пользователей</div>
                             </div>
                         </div>
                     </div>
@@ -440,8 +239,10 @@
                                 <i class="fa fa-shopping-cart fa-5x"></i>
                             </div>
                             <div class="col-xs-9 text-right">
-                                <div class="huge">124</div>
-                                <div>New Orders!</div>
+                                <div class="huge">{{$productions}}</div>
+                                <div>Количество продукции</div>
+                                {{--                                --}}
+
                             </div>
                         </div>
                     </div>
@@ -478,6 +279,11 @@
             </div>
         </div>
         <!-- /.row -->
+
+
+        {{--        Модуль графиков--}}
+
+
         <div class="row">
             <div class="col-lg-8">
                 <div class="panel panel-default">
@@ -485,7 +291,8 @@
                         <i class="fa fa-bar-chart-o fa-fw"></i> Area Chart Example
                         <div class="pull-right">
                             <div class="btn-group">
-                                <button type="button" class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown">
+                                <button type="button" class="btn btn-default btn-xs dropdown-toggle"
+                                        data-toggle="dropdown">
                                     Actions
                                     <span class="caret"></span>
                                 </button>
@@ -510,12 +317,18 @@
                     <!-- /.panel-body -->
                 </div>
                 <!-- /.panel -->
+
+
+                {{--                Столбчатая диаграма         --}}
+
+
                 <div class="panel panel-default">
                     <div class="panel-heading">
                         <i class="fa fa-bar-chart-o fa-fw"></i> Bar Chart Example
                         <div class="pull-right">
                             <div class="btn-group">
-                                <button type="button" class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown">
+                                <button type="button" class="btn btn-default btn-xs dropdown-toggle"
+                                        data-toggle="dropdown">
                                     Actions
                                     <span class="caret"></span>
                                 </button>
@@ -612,6 +425,11 @@
                     <!-- /.panel-body -->
                 </div>
                 <!-- /.panel -->
+
+
+                {{--                Расписание           --}}
+
+
                 <div class="panel panel-default">
                     <div class="panel-heading">
                         <i class="fa fa-clock-o fa-fw"></i> Responsive Timeline
@@ -625,11 +443,15 @@
                                 <div class="timeline-panel">
                                     <div class="timeline-heading">
                                         <h4 class="timeline-title">Lorem ipsum dolor</h4>
-                                        <p><small class="text-muted"><i class="fa fa-clock-o"></i> 11 hours ago via Twitter</small>
+                                        <p><small class="text-muted"><i class="fa fa-clock-o"></i> 11 hours ago via
+                                                Twitter</small>
                                         </p>
                                     </div>
                                     <div class="timeline-body">
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero laboriosam dolor perspiciatis omnis exercitationem. Beatae, officia pariatur? Est cum veniam excepturi. Maiores praesentium, porro voluptas suscipit facere rem dicta, debitis.</p>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero laboriosam
+                                            dolor perspiciatis omnis exercitationem. Beatae, officia pariatur? Est cum
+                                            veniam excepturi. Maiores praesentium, porro voluptas suscipit facere rem
+                                            dicta, debitis.</p>
                                     </div>
                                 </div>
                             </li>
@@ -641,8 +463,13 @@
                                         <h4 class="timeline-title">Lorem ipsum dolor</h4>
                                     </div>
                                     <div class="timeline-body">
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem dolorem quibusdam, tenetur commodi provident cumque magni voluptatem libero, quis rerum. Fugiat esse debitis optio, tempore. Animi officiis alias, officia repellendus.</p>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium maiores odit qui est tempora eos, nostrum provident explicabo dignissimos debitis vel! Adipisci eius voluptates, ad aut recusandae minus eaque facere.</p>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem dolorem
+                                            quibusdam, tenetur commodi provident cumque magni voluptatem libero, quis
+                                            rerum. Fugiat esse debitis optio, tempore. Animi officiis alias, officia
+                                            repellendus.</p>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium maiores
+                                            odit qui est tempora eos, nostrum provident explicabo dignissimos debitis
+                                            vel! Adipisci eius voluptates, ad aut recusandae minus eaque facere.</p>
                                     </div>
                                 </div>
                             </li>
@@ -654,7 +481,9 @@
                                         <h4 class="timeline-title">Lorem ipsum dolor</h4>
                                     </div>
                                     <div class="timeline-body">
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus numquam facilis enim eaque, tenetur nam id qui vel velit similique nihil iure molestias aliquam, voluptatem totam quaerat, magni commodi quisquam.</p>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus numquam
+                                            facilis enim eaque, tenetur nam id qui vel velit similique nihil iure
+                                            molestias aliquam, voluptatem totam quaerat, magni commodi quisquam.</p>
                                     </div>
                                 </div>
                             </li>
@@ -664,7 +493,10 @@
                                         <h4 class="timeline-title">Lorem ipsum dolor</h4>
                                     </div>
                                     <div class="timeline-body">
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates est quaerat asperiores sapiente, eligendi, nihil. Itaque quos, alias sapiente rerum quas odit! Aperiam officiis quidem delectus libero, omnis ut debitis!</p>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates est
+                                            quaerat asperiores sapiente, eligendi, nihil. Itaque quos, alias sapiente
+                                            rerum quas odit! Aperiam officiis quidem delectus libero, omnis ut
+                                            debitis!</p>
                                     </div>
                                 </div>
                             </li>
@@ -676,11 +508,14 @@
                                         <h4 class="timeline-title">Lorem ipsum dolor</h4>
                                     </div>
                                     <div class="timeline-body">
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis minus modi quam ipsum alias at est molestiae excepturi delectus nesciunt, quibusdam debitis amet, beatae consequuntur impedit nulla qui! Laborum, atque.</p>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis minus modi
+                                            quam ipsum alias at est molestiae excepturi delectus nesciunt, quibusdam
+                                            debitis amet, beatae consequuntur impedit nulla qui! Laborum, atque.</p>
                                         <hr>
                                         <div class="btn-group">
-                                            <button type="button" class="btn btn-primary btn-sm dropdown-toggle" data-toggle="dropdown">
-                                                <i class="fa fa-gear"></i>  <span class="caret"></span>
+                                            <button type="button" class="btn btn-primary btn-sm dropdown-toggle"
+                                                    data-toggle="dropdown">
+                                                <i class="fa fa-gear"></i> <span class="caret"></span>
                                             </button>
                                             <ul class="dropdown-menu" role="menu">
                                                 <li><a href="#">Action</a>
@@ -703,7 +538,10 @@
                                         <h4 class="timeline-title">Lorem ipsum dolor</h4>
                                     </div>
                                     <div class="timeline-body">
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi fuga odio quibusdam. Iure expedita, incidunt unde quis nam! Quod, quisquam. Officia quam qui adipisci quas consequuntur nostrum sequi. Consequuntur, commodi.</p>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi fuga odio
+                                            quibusdam. Iure expedita, incidunt unde quis nam! Quod, quisquam. Officia
+                                            quam qui adipisci quas consequuntur nostrum sequi. Consequuntur,
+                                            commodi.</p>
                                     </div>
                                 </div>
                             </li>
@@ -715,7 +553,10 @@
                                         <h4 class="timeline-title">Lorem ipsum dolor</h4>
                                     </div>
                                     <div class="timeline-body">
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt obcaecati, quaerat tempore officia voluptas debitis consectetur culpa amet, accusamus dolorum fugiat, animi dicta aperiam, enim incidunt quisquam maxime neque eaque.</p>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt obcaecati,
+                                            quaerat tempore officia voluptas debitis consectetur culpa amet, accusamus
+                                            dolorum fugiat, animi dicta aperiam, enim incidunt quisquam maxime neque
+                                            eaque.</p>
                                     </div>
                                 </div>
                             </li>
@@ -726,10 +567,15 @@
                 <!-- /.panel -->
             </div>
             <!-- /.col-lg-8 -->
+
+
+            {{--            Панель уведомлений          --}}
+
+
             <div class="col-lg-4">
                 <div class="panel panel-default">
                     <div class="panel-heading">
-                        <i class="fa fa-bell fa-fw"></i> Notifications Panel
+                        <i class="fa fa-bell fa-fw"></i> Панель уведомлений
                     </div>
                     <!-- /.panel-heading -->
                     <div class="panel-body">
@@ -797,10 +643,14 @@
                     <!-- /.panel-body -->
                 </div>
                 <!-- /.panel -->
+
+                {{--                Чат модераторов и админов           --}}
+
+
                 <div class="chat-panel panel panel-default">
                     <div class="panel-heading">
                         <i class="fa fa-comments fa-fw"></i>
-                        Chat
+                        Внутренний рабочий чат
                         <div class="btn-group pull-right">
                             <button type="button" class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown">
                                 <i class="fa fa-chevron-down"></i>
@@ -840,7 +690,8 @@
                         <ul class="chat">
                             <li class="left clearfix">
                                     <span class="chat-img pull-left">
-                                        <img src="http://placehold.it/50/55C1E7/fff" alt="User Avatar" class="img-circle" />
+                                        <img src="http://placehold.it/50/55C1E7/fff" alt="User Avatar"
+                                             class="img-circle"/>
                                     </span>
                                 <div class="chat-body clearfix">
                                     <div class="header">
@@ -850,13 +701,15 @@
                                         </small>
                                     </div>
                                     <p>
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur bibendum ornare dolor, quis ullamcorper ligula sodales.
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur bibendum
+                                        ornare dolor, quis ullamcorper ligula sodales.
                                     </p>
                                 </div>
                             </li>
                             <li class="right clearfix">
                                     <span class="chat-img pull-right">
-                                        <img src="http://placehold.it/50/FA6F57/fff" alt="User Avatar" class="img-circle" />
+                                        <img src="http://placehold.it/50/FA6F57/fff" alt="User Avatar"
+                                             class="img-circle"/>
                                     </span>
                                 <div class="chat-body clearfix">
                                     <div class="header">
@@ -865,46 +718,19 @@
                                         <strong class="pull-right primary-font">Bhaumik Patel</strong>
                                     </div>
                                     <p>
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur bibendum ornare dolor, quis ullamcorper ligula sodales.
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur bibendum
+                                        ornare dolor, quis ullamcorper ligula sodales.
                                     </p>
                                 </div>
                             </li>
-                            <li class="left clearfix">
-                                    <span class="chat-img pull-left">
-                                        <img src="http://placehold.it/50/55C1E7/fff" alt="User Avatar" class="img-circle" />
-                                    </span>
-                                <div class="chat-body clearfix">
-                                    <div class="header">
-                                        <strong class="primary-font">Jack Sparrow</strong>
-                                        <small class="pull-right text-muted">
-                                            <i class="fa fa-clock-o fa-fw"></i> 14 mins ago</small>
-                                    </div>
-                                    <p>
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur bibendum ornare dolor, quis ullamcorper ligula sodales.
-                                    </p>
-                                </div>
-                            </li>
-                            <li class="right clearfix">
-                                    <span class="chat-img pull-right">
-                                        <img src="http://placehold.it/50/FA6F57/fff" alt="User Avatar" class="img-circle" />
-                                    </span>
-                                <div class="chat-body clearfix">
-                                    <div class="header">
-                                        <small class=" text-muted">
-                                            <i class="fa fa-clock-o fa-fw"></i> 15 mins ago</small>
-                                        <strong class="pull-right primary-font">Bhaumik Patel</strong>
-                                    </div>
-                                    <p>
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur bibendum ornare dolor, quis ullamcorper ligula sodales.
-                                    </p>
-                                </div>
-                            </li>
+
                         </ul>
                     </div>
                     <!-- /.panel-body -->
                     <div class="panel-footer">
                         <div class="input-group">
-                            <input id="btn-input" type="text" class="form-control input-sm" placeholder="Type your message here..." />
+                            <input id="btn-input" type="text" class="form-control input-sm"
+                                   placeholder="Type your message here..."/>
                             <span class="input-group-btn">
                                     <button class="btn btn-warning btn-sm" id="btn-chat">
                                         Send
@@ -925,33 +751,19 @@
 </div>
 <!-- /#wrapper -->
 
-<!-- jQuery -->
 <script src="{{asset('js/jquery.js')}}"></script>
-
-<!-- Bootstrap Core JavaScript -->
+<script src="{{asset('js/sb-admin-2.js')}}"></script>
 <script src="{{asset('js/bootstrap.min.js')}}"></script>
 
-<!-- Metis Menu Plugin JavaScript -->
 <script src="{{asset('js/plugins/metisMenu/metisMenu.min.js')}}"></script>
 
-<!-- Morris Charts JavaScript -->
 <script src="{{asset('js/plugins/morris/raphael.min.js')}}"></script>
 <script src="{{asset('js/plugins/morris/morris.min.js')}}"></script>
 <script src="{{asset('js/plugins/morris/morris-data.js')}}"></script>
 
-<!-- Custom Theme JavaScript -->
-<script src="{{asset('js/sb-admin-2.js')}}"></script>
 
-<!-- Start your project here-->
-
-<!-- SCRIPTS -->
-<!-- JQuery -->
-<script type="text/javascript" src="{{asset('js/jquery-3.4.1.min.js')}}"></script>
-<!-- Bootstrap tooltips -->
 <script type="text/javascript" src="{{asset('js/popper.min.js')}}"></script>
-<!-- Bootstrap core JavaScript -->
-<script type="text/javascript" src="{{asset('js/bootstrap.min.js')}}"></script>
-<!-- MDB core JavaScript -->
+
 <script type="text/javascript" src="{{asset('js/mdb.min.js')}}"></script>
 </body>
 
