@@ -17,9 +17,12 @@ Route::get('/', function () {
 Route::get('/pricing', function () {
     return view('infopage.pricing');
 });
-Route::get('/about', function () {
-    return view('infopage.about');
-});
+Route::get('/about','HomePageController@about');
+Route::get('/about/source','HomePageController@source');
+Route::get('/about/product','HomePageController@product');
+Route::get('/about/mineral','HomePageController@mineral');
+//Route::get('/about','HomePageController@about');
+
 Route::get('/product', function () {
     return view('infopage.product');
 });
