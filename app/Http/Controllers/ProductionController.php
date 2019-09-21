@@ -15,10 +15,11 @@ class ProductionController extends Controller
      */
     public function index()
     {
-        $productions = Production::all()->count('id');
-        $users = User::all()->count('id');
-        return view('admin.dashboard', compact('productions','users'));
 
+    }
+    public function __construct()
+    {
+        $this->middleware('auth');
     }
 
     /**

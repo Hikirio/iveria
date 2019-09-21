@@ -9,6 +9,11 @@ use Illuminate\Http\Request;
 
 class UserController extends Controller
 {
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
+
     /**
      * Display a listing of the resource.
      *
@@ -16,11 +21,10 @@ class UserController extends Controller
      */
     public function index()
     {
-//        $user = User::all();
         $test = User::all();
-//        dump($test);
-        return view('admin.tables', compact('test'));
+        $personalinfo = Persinfouser::all();
 
+        return view('admin.tables', compact('test', 'personalinfo'));
     }
 
     /**
@@ -61,9 +65,10 @@ class UserController extends Controller
      * @param int $id
      * @return \Illuminate\Http\Response
      */
-    public function edit($id)
+
+    public function edit(Persinfouser $per)
     {
-        //
+        return view('admin.edit', compact('per'));
     }
 
     /**
@@ -73,9 +78,33 @@ class UserController extends Controller
      * @param int $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(Request $request, Persinfouser $per)
     {
-        //
+//        dd($per);
+//        dd($request);
+        try {
+//            $this->authorize('destroy', $per);
+//            $this->validate($request, [
+//                'id' => 'required|max:255',
+//                'first_name' => 'required',
+//                'second_name' => 'required',
+//                'surname' => 'required',
+//            ]);
+            $per->fill([
+//                'id' => $per->id,
+                'first_name' => $request->first_name,
+                'second_name' => $request->second_name,
+                'surname' => $request->surname,
+                'street' => $request->street,
+                'numberofhome' => $request->numberofhome,
+                'flat' => $request->flat,
+            ])->save();
+
+
+        } catch (\Exception $e) {
+            return redirect('/admin/tables/');
+        }
+        return redirect('/admin/tables/');
     }
 
     /**
@@ -83,9 +112,12 @@ class UserController extends Controller
      *
      * @param int $id
      * @return \Illuminate\Http\Response
+     * @throws \Exception
      */
-    public function destroy($id)
+    public function destroy(Persinfouser $per)
     {
-        //
+//        dd($per);
+        $per->delete();
+        return redirect('/admin/tables');
     }
 }
