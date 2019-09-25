@@ -15,7 +15,8 @@ class AboutController extends Controller
     public function index()
     {
         $prod = new Production();
-        return view('admin.add', compact('prod'));
+        $production = Production::all();
+        return view('admin.add', compact('prod', 'production'));
 
     }
 
@@ -53,7 +54,7 @@ class AboutController extends Controller
             dd($e);
 
         }
-        return redirect('/admin');
+        return redirect('/admin/oursource');
 
     }
 
@@ -74,9 +75,11 @@ class AboutController extends Controller
      * @param int $id
      * @return \Illuminate\Http\Response
      */
-    public function edit($id)
+    public function edit(Request $request, Production $p)
     {
-        //
+//        dd($p, $request);
+        return view('admin.editt', compact('p'));
+
     }
 
     /**
@@ -86,9 +89,20 @@ class AboutController extends Controller
      * @param int $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(Request $request, Production $p)
     {
-        //
+        $p->fill([
+
+            'name_product' => $request->name_product,
+            'description' => $request->description,
+            'price' => $request->price,
+            'photo'=>$request->photo,
+            'IsEmpty' => $request->IsEmpty,
+            'IsSoda' => $request->IsSoda,
+
+        ])->save();
+        return redirect('/admin/oursource/');
+
     }
 
     /**

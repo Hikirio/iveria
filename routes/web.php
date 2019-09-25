@@ -20,10 +20,10 @@ Route::get('/pricing', function () {
 
 //route all about branches
 
-Route::get('/about','HomePageController@about');
-Route::get('/about/source','HomePageController@source');
-Route::get('/about/product','HomePageController@product');
-Route::get('/about/mineral','HomePageController@mineral');
+Route::get('/about', 'HomePageController@about');
+Route::get('/about/source', 'HomePageController@source');
+Route::get('/about/product', 'HomePageController@product');
+Route::get('/about/mineral', 'HomePageController@mineral');
 
 
 Route::get('/product', function () {
@@ -35,19 +35,21 @@ Route::get('/contact', function () {
 
 //==========Админка================
 Route::get('/admin', 'AdminController@index');
-Route::get('/admin/tables','UserController@index');
+Route::get('/admin/tables', 'UserController@index');
 
 //==========CRUD===================
-Route::delete('/admin/tables/{per}','UserController@destroy');
-Route::get('/admin/tables/{per}/edit','UserController@edit');
+Route::delete('/admin/tables/{per}', 'UserController@destroy');
+Route::get('/admin/tables/{per}/edit', 'UserController@edit');
 Route::PUT('/admin/tables/{per}/update', 'UserController@update');
 Route::get('/admin/tables/{per}/update', 'AdminController@update');
 
 
-
 Route::get('/admin/oursource', 'AboutController@index');
-Route::put('/admin/oursource', 'AboutController@store');
+Route::get('/admin/oursource/{p}/edit', 'AboutController@edit');
+Route::put('/admin/oursource/{p}/update', 'AboutController@update');
 
+
+Route::put('/admin/oursource', 'AboutController@store');
 
 
 Auth::routes();

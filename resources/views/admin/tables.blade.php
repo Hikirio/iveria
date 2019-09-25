@@ -499,54 +499,77 @@
                 <!-- /.panel -->
             </div>
             <!-- /.col-lg-6 -->
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                    Данные о воде
+                    </div>
+                    <!-- /.panel-heading -->
+                    <div class="panel-body">
+                        <div class="table-responsive">
+                            <table class="table table-striped table-bordered table-hover">
+                                <thead>
+                                <tr>
+                                    <th>ID</th>
+                                    <th>Название</th>
+                                    <th>Описание</th>
+                                    <th>Фото</th>
+                                    <th>Цена</th>
+                                    <th>Наличие</th>
+                                    <th>Газ или б/газ</th>
+                                    <th>Действие</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                @foreach($personalinfo as $per)
 
-        {{--            <div class="col-lg-6">--}}
-        {{--                <div class="panel panel-default">--}}
-        {{--                    <div class="panel-heading">--}}
-        {{--                        Basic Table--}}
-        {{--                    </div>--}}
-        {{--                    <!-- /.panel-heading -->--}}
-        {{--                    <div class="panel-body">--}}
-        {{--                        <div class="table-responsive">--}}
-        {{--                            <table class="table">--}}
-        {{--                                <thead>--}}
-        {{--                                <tr>--}}
-        {{--                                    <th>#</th>--}}
-        {{--                                    <th>First Name</th>--}}
-        {{--                                    <th>Last Name</th>--}}
-        {{--                                    <th>Username</th>--}}
-        {{--                                </tr>--}}
-        {{--                                </thead>--}}
-        {{--                                <tbody>--}}
-        {{--                                <tr>--}}
-        {{--                                    <td>1</td>--}}
-        {{--                                    <td>Mark</td>--}}
-        {{--                                    <td>Otto</td>--}}
-        {{--                                    <td>@mdo</td>--}}
-        {{--                                </tr>--}}
-        {{--                                <tr>--}}
-        {{--                                    <td>2</td>--}}
-        {{--                                    <td>Jacob</td>--}}
-        {{--                                    <td>Thornton</td>--}}
-        {{--                                    <td>@fat</td>--}}
-        {{--                                </tr>--}}
-        {{--                                <tr>--}}
-        {{--                                    <td>3</td>--}}
-        {{--                                    <td>Larry</td>--}}
-        {{--                                    <td>the Bird</td>--}}
-        {{--                                    <td>@twitter</td>--}}
-        {{--                                </tr>--}}
-        {{--                                </tbody>--}}
-        {{--                            </table>--}}
-        {{--                        </div>--}}
-        {{--                        <!-- /.table-responsive -->--}}
-        {{--                    </div>--}}
-        {{--                    <!-- /.panel-body -->--}}
-        {{--                </div>--}}
-        {{--                <!-- /.panel -->--}}
-        {{--            </div>--}}
+                                    <tr>
 
-        <!-- /.col-lg-6 -->
+                                        <td>{{$per->id}}</td>
+                                        <td>{{$per->surname}}</td>
+                                        <td>{{$per->first_name}}</td>
+                                        <td>{{$per->second_name}}</td>
+                                        <td>{{$per->street}}</td>
+                                        <td>{{$per->numberofhome}}</td>
+                                        <td>{{$per->flat}}</td>
+
+                                        <td>
+
+                                            <form action="{{ url('/admin/tables/'.$per->id.'/edit') }}" method="GET">
+                                                {{ csrf_field() }}
+                                                {{ method_field('EDIT') }}
+                                                <button type="submit" id="edit-task-{{ $per->id }}"
+                                                        class="btn btn-primary">
+                                                    <i class="fa fa-btn fa-trash"></i>Edit
+                                                </button>
+                                            </form>
+
+                                            <form action="{{ url('admin/tables/'.$per->id) }}" method="POST">
+                                                {{ csrf_field() }}
+                                                {{ method_field('DELETE') }}
+                                                <button type="submit" id="delete-task-{{ $per->id }}"
+                                                        class="btn btn-danger"><i
+                                                            class="fa fa-btn fa-trash"></i>Delete
+                                                </button>
+                                            </form>
+
+                                        </td>
+                                    </tr>
+
+                                @endforeach
+
+                                </tbody>
+                            </table>
+                        </div>
+                        <!-- /.table-responsive -->
+                    </div>
+                    <!-- /.panel-body -->
+                </div>
+                <!-- /.panel -->
+            </div>
+            <!-- /.col-lg-6 -->
         </div>
         <!-- /.row -->
         <div class="row">

@@ -91,7 +91,7 @@ class UserController extends Controller
 //                'surname' => 'required',
 //            ]);
             $per->fill([
-//                'id' => $per->id,
+
                 'first_name' => $request->first_name,
                 'second_name' => $request->second_name,
                 'surname' => $request->surname,
